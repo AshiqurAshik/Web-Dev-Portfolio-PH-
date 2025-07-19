@@ -47,6 +47,10 @@ p{
   color: #757575;
 }
 
+::placeholder{
+  color: #757575;
+}
+
 /* Header Section */
 
 header{
@@ -207,11 +211,6 @@ main{
 
 .details h4{
   color: #474747;
-}
-
-
-.hide{
-  display: none;
 }
 
 @media screen  and (max-width: 576px) {
@@ -542,3 +541,127 @@ main{
 
 }
 
+/* Footer section */
+
+footer{
+  margin-top: 115px;
+  display: flex;
+  background-color: #FFF8F3;
+}
+
+.footer-txt{
+  padding: 130px 0px;
+  padding-left: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-txt h2,
+.massage-form h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.footer-txt p{
+  width: 80%;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 10px;
+}
+
+.massage-form{
+  padding: 130px 0;
+  padding-right: 230px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.massage-form input{
+  width: 450px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  outline: 0;
+  padding-left: 20px;
+}
+
+.massage-form textarea{
+  width: 450px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  outline: 0;
+  padding: 10px 20px;
+}
+
+/* Responsive Section */
+
+@media screen and (max-width:576px) {
+  
+  footer{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-txt,
+  .massage-form{
+    padding: 50px 20px;
+  }
+
+  .footer-txt p{
+    width: 100%;
+  }
+
+  .massage-form input,
+  .massage-form textarea{
+    width: 100%;
+  }
+
+  .footer-icons{
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px)
+{
+  footer{
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-icons{
+    justify-content: center;
+  }
+
+    .footer-txt{
+    padding: 50px 0;
+    text-align: center;
+  }
+
+    .footer-txt p{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .massage-form{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px)
+{
+  .footer-txt,
+  .massage-form{
+    padding: 100px 50px;
+    align-items: center;
+  }
+}
